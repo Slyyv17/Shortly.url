@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> URL SHORTENER </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo_header">
+            <a href="#" class="logo">Shortly.url</a>
+            <button class="navbar_toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+    
+        <ul class="main_nav">
+            <li>
+                <a href="#" class="nav_links">Home</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Products</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Contact</a>
+            </li>
+
+            <li>
+                <button class="btn-link"> sign in</button>
+            </li>
+        </ul>
+    
+    </nav>
+
+    <div id="container">
+        <div class="content">
+            <h2> More than just shortener links </h2>
+            <p> 
+                Build your brand's recognition and get detailed insights on how your links are performing.
+            </p>
+            <button class="get-started"> Get Started </button>
+        </div>
+
+        <div class="image">
+            <img src="images/13530655_5278386.jpg">
+        </div>
+    </div>
+
+    <form id="url-form">
+        <div class="url-container">
+            <input type="url" id="url-input" placeholder="Shorten a link here...">
+            <button type="submit" class="shortener">Shorten</button>
+        </div>
+
+        <div class="output">
+            <p id="result"></p>
+        </div>
+
+        <div class="copyright-box">
+            <p class="copyright"> &copy; Victor Ememe, All rights reserved.</p>
+        </div>
+    </form>
+
+    
+    <script src="shortener.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pry-ff: "Poppins", sans-serif;
+    --btn-clr: rgb(230, 70, 71);
+    --sec-clr: rgb(247, 238, 226);
+    --tet-clr: rgb(54, 12, 10);
+}
+
+body {
+    font-family: var(--pry-ff);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo_header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.main_nav {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.main_nav li {
+    color: #000;
+}
+
+.main_nav li a {
+    color: #000;
+}
+
+.btn-link {
+    /* padding: 0.5em 1em; */
+    width: 8em;
+    height: 3em;
+    background-color: var(--btn-clr);
+    color: var(--sec-clr);
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.navbar_toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+#container {
+    max-width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.content {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--tet-clr);
+    margin-bottom: 1em;
+}
+
+.get-started {
+    padding: 0.75em 1.5em;
+    background-color: var(--btn-clr);
+    color: var(--sec-clr);
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+#url-form {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.url-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 600px;
+}
+
+#url-input {
+    width: 100%;
+    padding: 0.5em 1em;
+    border: 1px solid var(--btn-clr);
+    border-radius: 1.5em;
+}
+
+#url-input:focus {
+    outline: none;
+    border-color: var(--btn-clr);
+}
+
+.shortener {
+    padding: 0.75em 1.5em;
+    background-color: var(--btn-clr);
+    color: var(--sec-clr);
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.output {
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid var(--btn-clr);
+    border-radius: 1.5em;
+}
+
+#result {
+    padding: 0.5em;
+}
+
+#copy-btn {
+    width: 8em;
+    height: 3em;
+    background-color: var(--btn-clr);
+    color: var(--sec-clr);
+    border: 0;
+    outline: none;
+    border-radius: 1.5em;
+}
+
+.copyright-box {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: var(--tet-clr);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+
+    }
+
+    .main_nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_nav li {
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .navbar_toggle {
+        display: block;
+    }
+
+    .navbar.show_nav .main_nav {
+        display: flex;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        padding: 1em 0;
+    }
+}
